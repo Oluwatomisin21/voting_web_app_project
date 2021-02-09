@@ -1,0 +1,2 @@
+//THIS IS MAIN JAVASCRIPT FILE
+console.log
