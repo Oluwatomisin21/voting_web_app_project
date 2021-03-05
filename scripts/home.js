@@ -7,7 +7,7 @@ function fadeOutEffect(event) {
     document.querySelector('.title').innerHTML = "Welcome" + " " + username;
     document.querySelector('.wrapper').classList.add("form-success");
     var fadeTarget = document.querySelector('form');
-    var fadeEffect = setInterval(function () {
+    var fadeEffect = setInterval(function() {
         if (!fadeTarget.style.opacity) {
             fadeTarget.style.opacity = 1;
         }
@@ -15,8 +15,8 @@ function fadeOutEffect(event) {
             fadeTarget.style.opacity -= 0.1;
         } else {
             clearInterval(fadeEffect);
-            window.location.href = "http://localhost:52330/templates/about.html";
+            window.location.href = "http://localhost:5500/templates/about.html";
         }
     }, 200);
-    
+
 }
