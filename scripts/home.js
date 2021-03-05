@@ -15,7 +15,7 @@ function fadeOutEffect(event) {
             fadeTarget.style.opacity -= 0.1;
         } else {
             clearInterval(fadeEffect);
-            window.location.href = "http://localhost:5500/templates/about.html";
+            window.location.href = "/templates/about.html";
         }
     }, 200);
 
