@@ -3,6 +3,8 @@ loginButton.addEventListener('click', fadeOutEffect)
 
 function fadeOutEffect(event) {
     event.preventDefault();
+    const username = document.querySelector('#username').value;
+    document.querySelector('.title').innerHTML = "Welcome" + " " + username;
     document.querySelector('.wrapper').classList.add("form-success");
     var fadeTarget = document.querySelector('form');
     var fadeEffect = setInterval(function () {

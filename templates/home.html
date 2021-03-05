@@ -9,13 +9,29 @@
     <title>Home | Vote</title>
 </head>
 <body>
+    <div class="nav-wrapper">
+        <nav class="nav" role="custom-dropdown">
+            <!-- <input type="checkbox" id="button">
+            <label for="button" onclick></label> -->
+            <div class="logo-item">
+                <a href="http://localhost:52330/templates/home.html">Logo</a>
+            </div>
+            <div>
+                <ul>
+                    <li class="list-item"><a href="http://localhost:52330/templates/home.html">Home</a></li>
+                    <li class="list-item"><a href="http://localhost:52330/templates/about.html">About</a></li>
+                    <li class="list-item"><a href="http://localhost:52330/templates/account.html">Account</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     <div class="wrapper">
         <div class="container">
-            <h1>Welcome</h1>
+            <h1 class="title">Login</h1>
             
             <form class="form">
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
+                <input type="text" name="username" id="username" placeholder="Username">
+                <input type="password" name="password" id="password" placeholder="Password">
                 <button type="submit" id="login-button">Login</button>
             </form>
         </div>
