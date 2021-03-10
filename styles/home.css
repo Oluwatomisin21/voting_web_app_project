@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 200;
@@ -9,66 +9,35 @@
     font-style: normal;
     font-weight: 300;
     src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
-}
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-weight: 300;
-}
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: white;
-    font-weight: 300;
-}
-body ::-webkit-input-placeholder {
+} */
     /* WebKit browsers */
+/* body ::-webkit-input-placeholder {
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
     font-weight: 300;
-}
-body :-moz-placeholder {
+} */
     /* Mozilla Firefox 4 to 18 */
+/* body :-moz-placeholder {
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
     opacity: 1;
     font-weight: 300;
-}
-body ::-moz-placeholder {
+} */
     /* Mozilla Firefox 19+ */
+/* body ::-moz-placeholder {
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
     opacity: 1;
     font-weight: 300;
-}
-body :-ms-input-placeholder {
+} */
     /* Internet Explorer 10+ */
+/* body :-ms-input-placeholder {
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
     font-weight: 300;
-}
-/* .nav-wrapper {} */
-.nav {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.logo-item {
-    display: inline-block;
-    padding: 1rem 1.5rem;
-}
-
-.list-item {
-    display: inline-block;
-    padding: 1rem 1.5rem;
-}
-
-.list-item a, .logo-item a {
-    text-decoration: none;
-    color: #50a3a2;
-}
-
-.wrapper {
+} */
+/* wrapper */
+.account-wrapper {
     background: #50a3a2;
     background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
     position: absolute;
@@ -79,22 +48,23 @@ body :-ms-input-placeholder {
     margin-top: -200px;
     overflow: hidden;
 }
-.wrapper.form-success .container h1 {
+.account-wrapper.form-success .account-container h1 {
     transform: translateY(85px);
 }
-.container {
+.account-container {
     max-width: 600px;
     margin: 0 auto;
     padding: 80px 0;
     height: 400px;
     text-align: center;
 }
-.container h1 {
+.account-container h1 {
     font-size: 40px;
     transition-duration: 1s;
     transition-timing-function: ease-in-put;
     font-weight: 200;
 }
+/* account form */
 form {
     padding: 20px 0;
     position: relative;
@@ -144,6 +114,7 @@ form button {
 form button:hover {
     background-color: #f5f7f9;
 }
+/* bubbles */
 .bg-bubbles {
     position: absolute;
     top: 0;
@@ -249,8 +220,3 @@ form button:hover {
         transform: translateY(-700px) rotate(600deg);
     }
 }
-
-/* 
-* {
-box-sizing: border-box;
-} */
