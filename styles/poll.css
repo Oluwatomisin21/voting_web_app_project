@@ -2,3 +2,41 @@
 .poll-title {
     text-align: center;
 }
+.poll-title-m{ 
+text-align: center;
+}
+.poll-container-lft{
+    background: #50a3a2;
+    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+    border-radius: 5px;
+    width: 45%;
+    margin-top: 10px;
+margin-left: 20px;
+padding: 20px;
+justify-content:space-between;
+}
+.poll-candidates{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 30px;
+}
+button.poll-btn{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+        appearance: none;
+outline: 0;
+background-color: white;
+border: 0;
+padding: 10px 15px;
+color: #53e3a6;
+border-radius: 3px;
+width: 150px;
+cursor: pointer;
+font-size: 18px;
+transition-duration: 0.25s;
+}
+button:hover {
+    background-color: #f5f7f9;
+}
