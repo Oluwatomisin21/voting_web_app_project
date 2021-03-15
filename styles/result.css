@@ -28,6 +28,19 @@
 
 .result-body {}
 
+div.parent-flex2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    border: 3px solid #7a6455;
+}
+
+p.child-flex2 {
+    padding: 4px;
+    border: 2px solid rgb(129, 129, 180);
+    background-color: #e7e6d2;
+}
+
 .result-footer {
     border: 3px solid linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
     background-color: lightblue;
