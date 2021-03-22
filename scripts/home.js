@@ -18,5 +18,18 @@ function fadeOutEffect(event) {
             window.location.href = "/templates/poll.html";
         }
     }, 200);
+    
+    // define user object
+    var user = {
+        username: username,
+        vote: 1
+    }
+    // serialize and store user object to localstorage
+    localStorage.setItem('user', JSON.stringify(user));
 
+    // retrieve user object from the store and convert to an object
+    // var users = JSON.parse(localStorage.getItem('user'));
+
+    // remove user from the localstorage
+    // localStorage.removeItem('user');
 }
