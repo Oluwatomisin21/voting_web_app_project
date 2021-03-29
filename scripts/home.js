@@ -28,7 +28,7 @@ function fadeOutEffect(event) {
     localStorage.setItem('user', JSON.stringify(user));
 
     // retrieve user object from the store and convert to an object
-    // var users = JSON.parse(localStorage.getItem('user'));
+    var users = JSON.parse(localStorage.getItem('user'));
 
     // remove user from the localstorage
     // localStorage.removeItem('user');
