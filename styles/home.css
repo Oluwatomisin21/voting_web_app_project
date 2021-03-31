@@ -114,6 +114,9 @@ form button {
 form button:hover {
     background-color: #f5f7f9;
 }
+.username--validation, .password--validation {
+    color: #f00;
+}
 /* bubbles */
 .bg-bubbles {
     position: absolute;
