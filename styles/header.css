@@ -7,6 +7,7 @@
 }
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: .8rem;
     /* color: white; */
     /* font-weight: 300; */
     margin: 0;
@@ -34,9 +35,26 @@ body {
     text-decoration: none;
     color: #50a3a2;
 }
+.list-item#poll {
+    display: none;
+}
+.list-item#result {
+    display: none;
+}
+.list-item#logout {
+    display: none;
+}
 
 /* large screen */
 @media screen and (min-width: 600px) {
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    /* color: white; */
+    /* font-weight: 300; */
+    margin: 0;
+    padding: 0;
+}
 .logo-item {
     display: inline-block;
     padding: 1rem 1.5rem;

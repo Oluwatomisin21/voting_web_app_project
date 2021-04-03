@@ -13,15 +13,16 @@
         <nav class="nav" role="custom-dropdown">
             <!-- <input type="checkbox" id="button">
             <label for="button" onclick></label> -->
-            <div class="logo-item">
+            <div class="logo-item" style="text-transform: capitalize;">
                 <a href="/templates/home.html">Logo</a>
             </div>
             <div>
                 <ul>
-                    <li class="list-item"><a href="/templates/home.html">Home</a></li>
-                    <li class="list-item"><a href="/templates/about.html">About</a></li>
-                    <li class="list-item"><a href="/templates/poll.html">Poll</a></li>
-                    <li class="list-item"><a href="/templates/result.html">Result</a></li>
+                    <li class="list-item" id="home"><a href="/templates/home.html">Home</a></li>
+                    <li class="list-item" id="about"><a href="/templates/about.html">About</a></li>
+                    <li class="list-item" id="poll"><a href="/templates/poll.html">Poll</a></li>
+                    <li class="list-item" id="result"><a href="/templates/result.html">Result</a></li>
+                    <li class="list-item" id="logout"><a href="/templates/home.html">Logout</a></li>
                 </ul>
             </div>
         </nav>
@@ -56,5 +57,6 @@
     </div>
 
     <script src="/scripts/poll.js"></script>
+    <script src="/scripts/header.js"></script>
 </body>
 </html>

@@ -1,9 +1,12 @@
+'use strict';
+
 const usernameValidation = document.querySelector('#username--validation').innerHTML = '';
 const passwordValidation = document.querySelector('#password--validation').innerHTML = '';
 const loginButton = document.querySelector('#login-button');
-loginButton.addEventListener('click', fadeOutEffect)
+loginButton.addEventListener('click', logIn)
 
-function fadeOutEffect(event) {
+// User login
+function logIn(event) {
     event.preventDefault();
     // Shortcuts to DOM Elements.
     const username = document.querySelector('#username').value;
@@ -41,10 +44,4 @@ function fadeOutEffect(event) {
     }
     // serialize and store user object to localstorage
     localStorage.setItem('user', JSON.stringify(user));
-
-    // retrieve user object from the store and convert to an object
-    var users = JSON.parse(localStorage.getItem('user'));
-
-    // remove user from the localstorage
-    // localStorage.removeItem('user');
 }
