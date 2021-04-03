@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000000;
+    font-weight: 300;
+}
+/* .nav-wrapper {} */
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-item {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+}
+
+.list-item {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+}
+
+.list-item a, .logo-item a {
+    text-decoration: none;
+    color: #50a3a2;
+}
+
+.wrapper {
+    text-align: center;
+}

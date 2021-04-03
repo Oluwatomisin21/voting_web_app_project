@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting application</title>
+    <link rel="stylesheet" href="/styles/result.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> -->
+
+    <!-- Governorship Chart script file  -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", {
+            packages: ["corechart"]
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['vote', 'Geographical location'],
+                ['North', 21],
+                ['South', 23],
+                ['East', 35],
+                ['West', 41],
+            ]);
+
+            var options = {
+                title: 'Governorship Election result',
+                is3D: true,
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+            chart.draw(data, options);
+        }
+    </script>
+    <!-- Presidential result chart script file -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", {
+            packages: ["corechart"]
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['vote', 'Geographical location'],
+                ['North', 61],
+                ['South', 52],
+                ['East', 33],
+                ['West', 42],
+            ]);
+
+            var options = {
+                title: 'Presidential Election result',
+                is3D: true,
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart2_3d'));
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="nav-wrapper">
+        <nav class="nav" role="custom-dropdown">
+            <!-- <input type="checkbox" id="button">
+            <label for="button" onclick></label> -->
+            <div class="logo-item">
+                <a href="/templates/home.html">Logo</a>
+            </div>
+            <div>
+                <ul>
+                    <li class="list-item" id="home"><a href="/templates/home.html">Home</a></li>
+                    <li class="list-item" id="about"><a href="/templates/about.html">About</a></li>
+                    <li class="list-item" id="poll"><a href="/templates/poll.html">Poll</a></li>
+                    <li class="list-item" id="result"><a href="/templates/result.html">Result</a></li>
+                    <li class="list-item" id="logout"><a href="/templates/home.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="result-title">
+        <h1 class="res">Results</h1>
+    </div>
+    <div class="result-wrapper">
+        <div class="result-container">
+            <div class="result-header">
+                <h1>Election Result</h1>
+            </div><br>
+            <div class="parent-flex2">
+                <p>Geographical location </p>
+                <p class="child-flex2">North</p>
+                <p class="child-flex2">South</p>
+                <p class="child-flex2"><span> East  </span></p>
+                <p class="child-flex2"><span> West  </span></p>
+            </div>
+            <div class="result-body">
+                <h3 class="gove">Governorship</h3>
+                <div class="parent-flex2">
+                    <p>Result/provinces </p>
+                    <p class="child-flex2">21</p>
+                    <p class="child-flex2">23</p>
+                    <p class="child-flex2">35</p>
+                    <p class="child-flex2">41</p>
+                </div>
+                <h3 class="pres">Presidential</h3>
+                <div class="parent-flex2">
+                    <p>Result/provinces </p>
+                    <p class="child-flex2">61</p>
+                    <p class="child-flex2">52</p>
+                    <p class="child-flex2">33</p>
+                    <p class="child-flex2">42</p>
+                </div>
+                <div>
+                    <h3 class="chai">Chairmanship </h3>
+                </div>
+                <div class="parent-flex2">
+                    <p>Result/provinces </p>
+                    <p class="child-flex2">15</p>
+                    <p class="child-flex2">22</p>
+                    <p class="child-flex2">35</p>
+                    <p class="child-flex2">47</p>
+                </div><br> </div><br>
+            <div class="result-footer">
+                <button>Export Result</button>
+            </div>
+        </div>
+        <div class="result-container">
+            <div class="result-header">
+                <h1>Election Statistics</h1>
+            </div>
+            <div class="result-body"><br>
+                <h3 class="gove2">Governorship</h3>
+                <h3 id="piechart_3d" style="width: 175px; height: 80px;"></h3>
+                <h3 class="pres2">Presidential</h3>
+                <h3 id="piechart2_3d" style="width: 175px; height: 80px;"></h3>
+                <h3 class="chai2">Chairmanship</h3><br><br>
+                <!-- <h3 id="piechart3_3d" style="width: 175px; height: 80px;"></h3> -->
+            </div>
+            <div class="result-footer">
+                <button>Export Statistics</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <address class="footer-left">
+            <p>Copyrights © 2021 All Rights Reserved by Scholastica. Terms of Use / Privacy Policy<br></p>
+        </address>
+        <address class="footer-right">
+            <a href="Vottingcompany@petcalsteph.com">Vottingcompany@petcalsteph.com</a></p>
+            <p>+2349068930947</p>
+        </address>
+    </footer>
+
+    <script src="/scripts/result.js"></script>
+    <script src="/scripts/header.js"></script>
+</body>
+</html>

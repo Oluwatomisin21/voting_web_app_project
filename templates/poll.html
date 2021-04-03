@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Vote</title>
+    <link rel="stylesheet" href="/styles/poll.css">
+    <link rel="stylesheet" href="/styles/header.css">
+</head>
+<body>
+    <div class="nav-wrapper">
+        <nav class="nav" role="custom-dropdown">
+            <!-- <input type="checkbox" id="button">
+            <label for="button" onclick></label> -->
+            <div class="logo-item" style="text-transform: capitalize;">
+                <a href="/templates/home.html">Logo</a>
+            </div>
+            <div>
+                <ul>
+                    <li class="list-item" id="home"><a href="/templates/home.html">Home</a></li>
+                    <li class="list-item" id="about"><a href="/templates/about.html">About</a></li>
+                    <li class="list-item" id="poll"><a href="/templates/poll.html">Poll</a></li>
+                    <li class="list-item" id="result"><a href="/templates/result.html">Result</a></li>
+                    <li class="list-item" id="logout"><a href="/templates/home.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="poll-wrapper">
+        <div class="poll-container">
+            <h1 class="poll-title">Poll Unit</h1>
+            <h2 class="poll-title-m">Governorship election</h2>
+                <div class="poll-candidates" id="cdt1">
+                    <div>
+                        <img src="https://picsum.photos/100" alt="">
+                        <h3>Candidate name</h3>
+                    </div>
+                        
+                    <button class="poll-btn" id="vote-button">VOTE</button>
+                </div>
+                
+                <div class="poll-candidates" id="cdt2">
+                    <div>
+                        <img src="https://picsum.photos/100" alt="">
+                        <h3>Candidate name</h3>
+                    </div>
+                        
+                    <button class="poll-btn" id="vote-button">VOTE</button>
+                </div>
+
+            <div class="poll-container-rgt">
+
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="/scripts/poll.js"></script>
+    <script src="/scripts/header.js"></script>
+</body>
+</html>

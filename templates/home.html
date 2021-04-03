@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="alternate" href="atom.xml" type="application/atom+xml" title="Atom">
+    <title>Home | Vote</title>
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/header.css">
+</head>
+
+<body>
+    <div class="nav-wrapper">
+        <nav class="nav" role="custom-dropdown">
+            <!-- <input type="checkbox" id="button">
+            <label for="button" onclick></label> -->
+            <div class="logo-item">
+                <a href="/templates/home.html">Logo</a>
+            </div>
+            <div>
+                <ul>
+                    <li class="list-item" id="home"><a href="/templates/home.html">Home</a></li>
+                    <li class="list-item" id="about"><a href="/templates/about.html">About</a></li>
+                    <li class="list-item" id="poll"><a href="/templates/poll.html">Poll</a></li>
+                    <li class="list-item" id="result"><a href="/templates/result.html">Result</a></li>
+                    <li class="list-item" id="logout"><a href="/templates/home.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="account-wrapper">
+        <div class="account-container">
+            <h1 class="account-title">Login</h1>
+            <form class="form">
+                <div>
+                    <input type="text" name="username" id="username" placeholder="Username">
+                    <span class="username--validation" id="username--validation"></span>
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <span class="password--validation" id="password--validation"></span>
+                </div>
+                <div>
+                    <button type="submit" id="login-button">Login</button>
+                </div>
+            </form>
+        </div>
+
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <script src="/scripts/home.js"></script>
+    <script src="/scripts/header.js"></script>
+</body>
+
+</html>
