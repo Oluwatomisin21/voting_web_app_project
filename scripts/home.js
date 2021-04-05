@@ -11,15 +11,23 @@ function logIn(event) {
     // Shortcuts to DOM Elements.
     const username = document.querySelector('#username').value;
     const password = document.querySelector('#password').value;
-    if (username === '' || password === '') {
+    if (!username) {
         // Shortcuts to DOM Elements.
         document.querySelector('#username--validation').innerHTML = 'Username is required!';
-        document.querySelector('#password--validation').innerHTML = 'Password is required!';
         // Clear error messages on the page
         setTimeout(() => {
             document.querySelector('#username--validation').innerHTML = '';
+        }, 5000);
+    }
+    if (!password) {
+        // Shortcuts to DOM Elements.
+        document.querySelector('#password--validation').innerHTML = 'Password is required!';
+        // Clear error messages on the page
+        setTimeout(() => {
             document.querySelector('#password--validation').innerHTML = '';
         }, 5000);
+    }
+    if (!username || !password) {
         return;
     }
     document.querySelector('.account-title').innerHTML = "Welcome" + " " + username+"!\nProceeding to voting page . . .";
