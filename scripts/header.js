@@ -18,6 +18,8 @@ function logOut(event) {
     event.preventDefault();
     // remove user from the localstorage
     localStorage.removeItem('user');
+    // remove candidates from the localstorage
+    localStorage.removeItem('candidates');
     // Return home
     window.location.href = "/templates/home.html";
 }

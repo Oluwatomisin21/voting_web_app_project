@@ -52,4 +52,17 @@ function logIn(event) {
     }
     // serialize and store user object to localstorage
     localStorage.setItem('user', JSON.stringify(user));
+    //define user object
+    var candidates = [
+        {
+            name: "candidate1",
+            votes: 10
+        },
+        {
+            name: "candidate2",
+            votes: 15
+        }
+    ]
+    // serialize and store candidates object to localstorage
+    localStorage.setItem('candidates', JSON.stringify(candidates));
 }
