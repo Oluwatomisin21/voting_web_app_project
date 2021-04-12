@@ -37,31 +37,7 @@
         }
     </script>
     <!-- Presidential result chart script file -->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-        google.charts.load("current", {
-            packages: ["corechart"]
-        });
-        google.charts.setOnLoadCallback(drawChart);
 
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-                ['vote', 'Geographical location'],
-                ['North', 61],
-                ['South', 52],
-                ['East', 33],
-                ['West', 42],
-            ]);
-
-            var options = {
-                title: 'Presidential Election result',
-                is3D: true,
-            };
-
-            var chart = new google.visualization.PieChart(document.getElementById('piechart2_3d'));
-            chart.draw(data, options);
-        }
-    </script>
 </head>
 
 <body>
@@ -107,24 +83,8 @@
                     <p class="child-flex2">35</p>
                     <p class="child-flex2">41</p>
                 </div>
-                <h3 class="pres">Presidential</h3>
-                <div class="parent-flex2">
-                    <p>Result/provinces </p>
-                    <p class="child-flex2">61</p>
-                    <p class="child-flex2">52</p>
-                    <p class="child-flex2">33</p>
-                    <p class="child-flex2">42</p>
-                </div>
-                <div>
-                    <h3 class="chai">Chairmanship </h3>
-                </div>
-                <div class="parent-flex2">
-                    <p>Result/provinces </p>
-                    <p class="child-flex2">15</p>
-                    <p class="child-flex2">22</p>
-                    <p class="child-flex2">35</p>
-                    <p class="child-flex2">47</p>
-                </div><br> </div><br>
+
+                <br> </div><br>
             <div class="result-footer">
                 <button>Export Result</button>
             </div>
@@ -136,11 +96,9 @@
             <div class="result-body"><br>
                 <h3 class="gove2">Governorship</h3>
                 <h3 id="piechart_3d" style="width: 175px; height: 80px;"></h3>
-                <h3 class="pres2">Presidential</h3>
-                <h3 id="piechart2_3d" style="width: 175px; height: 80px;"></h3>
-                <h3 class="chai2">Chairmanship</h3><br><br>
+
                 <!-- <h3 id="piechart3_3d" style="width: 175px; height: 80px;"></h3> -->
-            </div>
+            </div><br>
             <div class="result-footer">
                 <button>Export Statistics</button>
             </div>
@@ -160,4 +118,5 @@
     <script src="/scripts/result.js"></script>
     <script src="/scripts/header.js"></script>
 </body>
+
 </html>
