@@ -19,20 +19,22 @@
         google.charts.setOnLoadCallback(drawChart);
 
         function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-                ['vote', 'candidate'],
-                ['candidate 1', 21],
-                ['candidate 2', 41],
-            ]);
+            var candidates = JSON.parse(localStorage.getItem('candidates');
 
-            var options = {
-                title: 'Governorship Election result',
-                is3D: true,
-            };
 
-            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-            chart.draw(data, options);
-        }
+                var data = google.visualization.arrayToDataTable([
+                    // ['vote', 'candidate'],
+                    // ['candidate 1', 21],
+                    // ['candidate 2', 41],
+                ]);
+
+                var options = {
+                    title: 'Governorship Election result',
+                    is3D: true,
+                };
+
+                var chart = new google.visualization.PieChart(document.getElementById('piechart_3d')); chart.draw(data, options);
+            }
     </script>
     <!-- Presidential result chart script file -->
 
@@ -67,16 +69,16 @@
             </div><br>
             <div class="parent-flex2">
                 <p>Electoral candidate </p>
-                <p class="child-flex2">Candidates 1</p><br>
-                <p class="child-flex2">Candidates 2</p><br><br>
+                <!-- <p class="child-flex2">Candidates 1</p><br>
+                <p class="child-flex2">Candidates 2</p><br><br> -->
 
             </div>
             <div class="result-body">
                 <h3 class="gove">Governorship</h3>
                 <div class="parent-flex2">
                     <p>Result/provinces </p>
-                    <p class="child-flex2">21</p><br><br>
-                    <p class="child-flex2">41</p><br>
+                    <p id="can-result-1" class="child-flex2">0</p><br><br>
+                    <p id="can-result-2" class="child-flex2">0</p><br>
                 </div>
 
                 <br> </div><br>
