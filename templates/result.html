@@ -19,22 +19,33 @@
         google.charts.setOnLoadCallback(drawChart);
 
         function drawChart() {
-            var candidates = JSON.parse(localStorage.getItem('candidates');
+            // var candidates = JSON.parse(localStorage.getItem('candidates');
+
+            // returned from converter 
+            var arr = [
+                ['vote', 'candidate'],
+                ['candidate 1', candidates[0].votes],
+                ['candidate 2', candidates[1].votes],
+            ]
+
+            var data = google.visualization.arrayToDataTable(arr);
+
+            // var data = google.visualization.arrayToDataTable([
+            //     ['vote', 'candidate'],
+            //     ['candidate 1', 21],
+            //     ['candidate 2', 41],
+            // ]);
 
 
-                var data = google.visualization.arrayToDataTable([
-                    // ['vote', 'candidate'],
-                    // ['candidate 1', 21],
-                    // ['candidate 2', 41],
-                ]);
 
-                var options = {
-                    title: 'Governorship Election result',
-                    is3D: true,
-                };
+            var options = {
+                title: 'Governorship Election result',
+                is3D: true,
+            };
 
-                var chart = new google.visualization.PieChart(document.getElementById('piechart_3d')); chart.draw(data, options);
-            }
+            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+            chart.draw(data, options);
+        }
     </script>
     <!-- Presidential result chart script file -->
 
@@ -92,10 +103,10 @@
             </div>
             <div class="result-body"><br>
                 <h3 class="gove2">Governorship</h3>
-                <h3 id="piechart_3d" style="width: 175px; height: 80px;"></h3>
+                <h3 id="piechart_3d" style="width: 350px; height: 150px;"></h3>
 
                 <!-- <h3 id="piechart3_3d" style="width: 175px; height: 80px;"></h3> -->
-            </div><br>
+            </div><br><br><br><br><br><br>
             <div class="result-footer">
                 <button>Export Statistics</button>
             </div>
