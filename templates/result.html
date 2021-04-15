@@ -24,8 +24,8 @@
             // returned from converter 
             var arr = [
                 ['vote', 'candidate'],
-                ['candidate 1', candidates[0].votes],
-                ['candidate 2', candidates[1].votes],
+                ['candidate 1', candidates[0].votes], //return vote count from Local storage
+                ['candidate 2', candidates[1].votes], //return vote count from Local storage
             ]
 
             var data = google.visualization.arrayToDataTable(arr);
@@ -80,8 +80,8 @@
             </div><br>
             <div class="parent-flex2">
                 <p>Electoral candidate </p>
-                <!-- <p class="child-flex2">Candidates 1</p><br>
-                <p class="child-flex2">Candidates 2</p><br><br> -->
+                <p class="can-header">Candidates 1</p><br>
+                <p class="can-header">Candidates 2</p><br><br>
 
             </div>
             <div class="result-body">
@@ -104,8 +104,6 @@
             <div class="result-body"><br>
                 <h3 class="gove2">Governorship</h3>
                 <h3 id="piechart_3d" style="width: 350px; height: 150px;"></h3>
-
-                <!-- <h3 id="piechart3_3d" style="width: 175px; height: 80px;"></h3> -->
             </div><br><br><br><br><br><br>
             <div class="result-footer">
                 <button>Export Statistics</button>

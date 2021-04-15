@@ -41,6 +41,13 @@ p.child-flex2 {
     background-color: #e7e6d2;
 }
 
+p.can-header {
+    padding: 4px;
+    border: 2px solid rgb(129, 129, 180);
+    background-color: #65e0f6;
+    text-decoration: solid;
+}
+
 .result-footer {
     border: 3px solid linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
     background-color: lightblue;
@@ -128,12 +135,6 @@ h3.chai2 {
 }
 
 #piechart_3d {
-    display: flex;
-    flex-direction: row;
-    margin: 0px 0px 0px 160px;
-}
-
-#piechart2_3d {
     display: flex;
     flex-direction: row;
     margin: 0px 0px 0px 160px;
