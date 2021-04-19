@@ -136,8 +136,10 @@ h3.chai2 {
 
 #piechart_3d {
     display: flex;
+    width: auto;
+    height: auto;
     flex-direction: row;
-    margin: 0px 0px 0px 160px;
+    margin: 2rem;
 }
 
 .footer {
