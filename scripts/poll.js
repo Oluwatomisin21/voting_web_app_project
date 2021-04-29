@@ -1,6 +1,5 @@
 'use strict';
 
-
 const votingButtons = document.querySelectorAll('.poll-btn');
 votingButtons.forEach(button => {
     button.addEventListener('click', voterschoice);
