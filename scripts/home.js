@@ -56,12 +56,12 @@ function logIn(event) {
     var candidates = [
         {
             name: "candidate1",
-            votes: 10
+            votes: Math.floor(Math.random()*100),
         },
         {
             name: "candidate2",
-            votes: 15
-        }
+            votes: Math.floor(Math.random()*100),
+        }    
     ]
     // serialize and store candidates object to localstorage
     localStorage.setItem('candidates', JSON.stringify(candidates));

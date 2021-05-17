@@ -22,6 +22,8 @@ function voterschoice(event) {
     votingButtons.forEach(button => { 
         button.disabled = true;
         button.style.cursor = "not-allowed";
+        button.style.opacity = 0.5;
+
 
     })
     
@@ -36,6 +38,7 @@ function voterschoice(event) {
 
     if (user.vote <= 0) {
         alert("Max vote reached")
+        return;
     }
 }
 
