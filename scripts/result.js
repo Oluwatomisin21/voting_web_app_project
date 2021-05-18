@@ -11,19 +11,20 @@
 //     },
 //calling 
 var candidates = JSON.parse(localStorage.getItem('candidates'));
-// console.log(candidates[0].votes)
+console.log(candidates[0].votes)
 
-// document.getElementById("can-result-1").innerHTML = candidates[0].votes;
-// document.getElementById("can-result-2").innerHTML = candidates[1].votes;
+document.getElementById("can-result-1").innerHTML = candidates[0].votes;
+document.getElementById("can-result-2").innerHTML = candidates[1].votes;
 
 const votingButtons = document.querySelectorAll('.child-flex2');
-// console.log(votingButtons)
+console.log(votingButtons)
 votingButtons.forEach((element, i) => {
     element.innerHTML = candidates[i].votes;
-    // console.log(candidates[i].votes)
+    console.log(candidates[i].votes)
 });
 
-//converter function 
+// converter function
+
 function converter(array) {
     var str = '';
     var header = '';
