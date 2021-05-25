@@ -125,10 +125,11 @@ h3.gove2 {
 #piechart_3d {
     display: flex;
     flex-flow: wrap;
-    width: 88%;
+    width: auto;
     height: auto;
     flex-direction: row;
     margin: 2rem;
+    align-self: center;
 }
 
 .footer {
@@ -164,7 +165,7 @@ h3.gove2 {
     #piechart_3d {
         display: flex;
         flex-flow: wrap;
-        width: 530px;
+        width: auto;
         height: auto;
         flex-direction: row;
         margin: 2rem;
